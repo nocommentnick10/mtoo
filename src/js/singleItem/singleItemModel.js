@@ -5,7 +5,7 @@ export default class SingleItem{
 
     async getItem(){
         try{
-            const queryString = `https://kalinovne.ru/mtoo/items/${this.id}`
+            const queryString = `http://app.kalinovne.ru/items/${this.id}`
             const response = await fetch(queryString)
             const data = await response.json()
             this.result = await data
@@ -16,7 +16,7 @@ export default class SingleItem{
     }
 
     async submitForm(formData){
-        const queryString = 'https://kalinovne.ru/mtoo/bidnew'
+        const queryString = 'http://app.kalinovne.ru/bidnew'
 
         const response = await fetch(queryString, {
             method: 'POST',

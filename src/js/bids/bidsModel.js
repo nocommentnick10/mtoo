@@ -5,7 +5,7 @@ export default class Bids{
 
     async getBids(){
         try{
-            const queryString = 'https://kalinovne.ru/mtoo/bids'
+            const queryString = 'http://app.kalinovne.ru/bids'
             const result = await fetch(queryString)
             const data = await result.json()
             this.bids = await data

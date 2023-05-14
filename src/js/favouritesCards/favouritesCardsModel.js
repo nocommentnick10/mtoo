@@ -7,7 +7,7 @@ export default class FavouritesCards{
         try{
             const ids = this.favsList.toString()
             if(this.favsList.length != 0){
-                const queryString = `https://jsproject.webcademy.ru/items?ids=${ids}`
+                const queryString = `http://app.kalinovne.ru/items?ids=${ids}`
 
                 const result = await fetch(queryString)
                 const data = await result.json()

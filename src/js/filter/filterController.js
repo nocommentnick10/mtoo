@@ -34,6 +34,7 @@ export default async function(state){
         state.filter.query = ''
         await state.filter.getResults()
         view.changeBtnText(state.filter.result.length)
+        state.results = state.filter.result
     })
 
     form.addEventListener('submit', function(e){

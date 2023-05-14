@@ -10,7 +10,7 @@ export function render(obj, isFav){
             <!-- object__photo -->
             <div class="object__photo">
                 <div class="object__photo-wrapper">
-                    <img src="${obj.image}" alt="" />
+                    <img src="./images/data/${obj.image}" alt="" />
                 </div>
             </div>
             <!-- // object__photo -->

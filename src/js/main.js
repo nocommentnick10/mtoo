@@ -3,6 +3,8 @@ import singleItem from './pages/singleItemPage'
 import favsPage from './pages/favsPage'
 import bidsPage from './pages/bidsPage'
 import errPage from './pages/errPage'
+import loginPage from './pages/loginPage'
+import adminPage from './pages/adminPage'
 import EventEmitter from './utils/EventEmitter'
 import Favourites from './favourites/favouritesModel'
 
@@ -14,8 +16,8 @@ const state = {
 
 // NODE_OPTIONS=--openssl-legacy-provider npm start
 
-// u1884314_jsproje
-// wZ1bV6rW6hxG8jU9
+// ck92198_jsprojec
+// GyeB3pVa
 
 window.state = state    // Удалить!
 
@@ -26,6 +28,8 @@ const routes = [
     { path: 'item', component: singleItem },
     { path: 'favourites', component: favsPage },
     { path: 'bids', component: bidsPage },
+    // { path: 'login', component: loginPage},
+    // { path: 'admin', component: adminPage},
 ]
 
 function findComponentByPath(path, routes){

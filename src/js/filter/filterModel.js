@@ -5,7 +5,7 @@ export default class Filter{
 
     async getParams(){
         try{
-            const queryString = 'https://kalinovne.ru/mtoo/itemsinfo'
+            const queryString = 'http://app.kalinovne.ru/itemsinfo'
             const response = await fetch(queryString)
             const data = await response.json()
             this.params = await data
@@ -18,7 +18,7 @@ export default class Filter{
 
     async getResults(){
         try{
-            const queryString = `https://kalinovne.ru/mtoo/items${this.query}`
+            const queryString = `http://app.kalinovne.ru/items${this.query}`
             const response = await fetch(queryString)
             const data = await response.json()
             this.result = await data

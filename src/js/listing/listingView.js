@@ -26,7 +26,7 @@ export function renderCard(obj, isFav){
                 </div>
             </div>
             <div class="card__img">
-                <img src="${obj.image}" alt="План квартиры" />
+                <img src="./images/data/${obj.image}" alt="План квартиры" />
             </div>
             <div class="card__desc">
                 <div class="card__price">
